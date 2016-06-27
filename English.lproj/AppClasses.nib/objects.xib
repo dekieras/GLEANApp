@@ -1,0 +1,92 @@
+<?xml version="1.0" standalone="yes"?>
+<object class="NSIBObjectData">
+  <string name="targetFramework">IBCarbonFramework</string>
+  <object name="rootObject" class="NSCustomObject" id="1">
+    <string name="customClass">NSApplication</string>
+  </object>
+  <array count="7" name="allObjects">
+    <object class="IBCarbonWindow" id="166">
+      <string name="windowRect">50 10 377 308 </string>
+      <string name="title">AppTextWindow</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="167">
+        <string name="bounds">0 0 327 298 </string>
+        <string name="viewFrame">0 0 298 327 </string>
+        <array count="1" name="subviews">
+          <object class="IBCarbonScrollView" id="201">
+            <string name="bounds">20 20 307 278 </string>
+            <string name="viewFrame">20 20 258 287 </string>
+            <array count="1" name="subviews">
+              <object class="IBCarbonTextView" id="200">
+                <string name="bounds">20 20 292 263 </string>
+                <string name="viewFrame">0 0 243 272 </string>
+                <ostype name="controlSignature">ApTW</ostype>
+                <int name="controlID">1</int>
+                <boolean name="noCaretWhenInactive">TRUE</boolean>
+              </object>
+            </array>
+            <ostype name="controlSignature">ApTW</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingTopKind">1</int>
+              <int name="bindingLeftKind">1</int>
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="liveResize">TRUE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+      <boolean name="asyncDrag">TRUE</boolean>
+    </object>
+    <reference idRef="167"/>
+    <reference idRef="200"/>
+    <reference idRef="201"/>
+    <object class="IBCarbonWindow" id="202">
+      <string name="windowRect">222 315 512 605 </string>
+      <string name="title">AppDrawingWindow</string>
+      <object name="rootControl" class="IBCarbonRootControl" id="203">
+        <string name="bounds">0 0 290 290 </string>
+        <string name="viewFrame">0 0 290 290 </string>
+        <array count="1" name="subviews">
+          <object class="IBCarbonHIView" id="204">
+            <string name="bounds">20 20 270 270 </string>
+            <string name="viewFrame">20 20 250 250 </string>
+            <ostype name="controlSignature">ApDW</ostype>
+            <object name="layoutInfo" class="IBCarbonHILayoutInfo">
+              <int name="bindingTopKind">1</int>
+              <int name="bindingLeftKind">1</int>
+              <int name="bindingBottomKind">2</int>
+              <int name="bindingRightKind">2</int>
+            </object>
+          </object>
+        </array>
+      </object>
+      <boolean name="receiveUpdates">FALSE</boolean>
+      <boolean name="liveResize">TRUE</boolean>
+      <boolean name="compositing">TRUE</boolean>
+    </object>
+    <reference idRef="203"/>
+    <reference idRef="204"/>
+  </array>
+  <array count="7" name="allParents">
+    <reference idRef="1"/>
+    <reference idRef="166"/>
+    <reference idRef="201"/>
+    <reference idRef="167"/>
+    <reference idRef="1"/>
+    <reference idRef="202"/>
+    <reference idRef="203"/>
+  </array>
+  <dictionary count="4" name="nameTable">
+    <string>AppDrawingWindow</string>
+    <reference idRef="202"/>
+    <string>AppTextWindow</string>
+    <reference idRef="166"/>
+    <string>Files Owner</string>
+    <reference idRef="1"/>
+    <string>View1</string>
+    <reference idRef="204"/>
+  </dictionary>
+  <unsigned_int name="nextObjectID">205</unsigned_int>
+</object>

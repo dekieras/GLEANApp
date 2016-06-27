@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+		B777CAA40DA13E2000ADF49F /* ObjectView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B777CAA20DA13E2000ADF49F /* ObjectView.cpp */; };
+		B78F67DC0C0D04A4002C586A /* AppColorUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D29A0C03740800986A1C /* AppColorUtilities.cpp */; };
+		B78F67DD0C0D04A5002C586A /* AppClassesUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2980C03740800986A1C /* AppClassesUtilities.cpp */; };
+		B78F67DE0C0D04A6002C586A /* AppBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2940C03740800986A1C /* AppBase.cpp */; };
+		B78F67E00C0D04BF002C586A /* CLGleanApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F67300C0CF86F002C586A /* CLGleanApp.cpp */; };
+		B78F67E10C0D04C0002C586A /* CLGleanStandaloneMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B78F67320C0CF86F002C586A /* CLGleanStandaloneMain.cpp */; };
+		B7A703330D9D995200937B88 /* WmView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A703320D9D995200937B88 /* WmView.cpp */; };
+		B7A82E710C1641B200B3656C /* create_Dummy_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A82E6E0C1641B200B3656C /* create_Dummy_device.cpp */; };
+		B7A82E720C1641B200B3656C /* Dummy_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7A82E6F0C1641B200B3656C /* Dummy_device.cpp */; };
+		B7BBB03A0C060B440052E753 /* Color_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB02D0C060B440052E753 /* Color_map.cpp */; };
+		B7BBB03B0C060B440052E753 /* Drawing_shape_pool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0300C060B440052E753 /* Drawing_shape_pool.cpp */; };
+		B7BBB03C0C060B440052E753 /* Drawing_shapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0320C060B440052E753 /* Drawing_shapes.cpp */; };
+		B7BBB03D0C060B440052E753 /* VisualView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0340C060B440052E753 /* VisualView.cpp */; };
+		B7BBB03E0C060B440052E753 /* VisualViewObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0360C060B440052E753 /* VisualViewObject.cpp */; };
+		B7BBB03F0C060B440052E753 /* TextView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0380C060B440052E753 /* TextView.cpp */; };
+		B7D4D6F91D218C1D00F403EA /* GLEANKernel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D4D6F81D218C1D00F403EA /* GLEANKernel.framework */; };
+		B7F4D2AC0C03740800986A1C /* AppDialogBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D29C0C03740800986A1C /* AppDialogBase.cpp */; };
+		B7F4D2AD0C03740800986A1C /* AppDrawingWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D29E0C03740800986A1C /* AppDrawingWindow.cpp */; };
+		B7F4D2AE0C03740800986A1C /* AppNavDialogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2A00C03740800986A1C /* AppNavDialogs.cpp */; };
+		B7F4D2AF0C03740800986A1C /* AppTextWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2A20C03740800986A1C /* AppTextWindow.cpp */; };
+		B7F4D2B00C03740800986A1C /* AppTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2A40C03740800986A1C /* AppTimer.cpp */; };
+		B7F4D2B10C03740800986A1C /* AppWindowBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2A60C03740800986A1C /* AppWindowBase.cpp */; };
+		B7F4D2CD0C03743B00986A1C /* BreakDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2B20C03743B00986A1C /* BreakDialog.cpp */; };
+		B7F4D2CF0C03743B00986A1C /* DisplayDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2B60C03743B00986A1C /* DisplayDialog.cpp */; };
+		B7F4D2D30C03743B00986A1C /* GleanApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2BE0C03743B00986A1C /* GleanApp.cpp */; };
+		B7F4D2D40C03743B00986A1C /* GleanAppmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2C00C03743B00986A1C /* GleanAppmain.cpp */; };
+		B7F4D2D50C03743B00986A1C /* LogDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2C10C03743B00986A1C /* LogDialog.cpp */; };
+		B7F4D2D60C03743B00986A1C /* RunDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2C30C03743B00986A1C /* RunDialog.cpp */; };
+		B7F4D2DA0C03743B00986A1C /* TraceDialog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2CB0C03743B00986A1C /* TraceDialog.cpp */; };
+		B7F4D2F90C03750D00986A1C /* AppClasses.nib in Resources */ = {isa = PBXBuildFile; fileRef = B7F4D2F50C03750D00986A1C /* AppClasses.nib */; };
+		B7F4D2FA0C03750D00986A1C /* GLEANApp.nib in Resources */ = {isa = PBXBuildFile; fileRef = B7F4D2F70C03750D00986A1C /* GLEANApp.nib */; };
+		B7F4D3840C03789300986A1C /* testheader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D3830C03789300986A1C /* testheader.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32DBCF6D0370B57F00C91783 /* GLEANX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEANX_Prefix.pch; sourceTree = "<group>"; };
+		5048396D09E3307300765E4B /* GLEANXProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = GLEANXProj.xcconfig; sourceTree = "<group>"; };
+		5048396E09E3307300765E4B /* GLEANXTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = GLEANXTarget.xcconfig; sourceTree = "<group>"; };
+		508344B209E5C41E0093A071 /* GLEANX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLEANX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B72AD03C0E11D81B0017A37B /* libDummy_device.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDummy_device.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B777CAA20DA13E2000ADF49F /* ObjectView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectView.cpp; sourceTree = "<group>"; };
+		B777CAA30DA13E2000ADF49F /* ObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectView.h; sourceTree = "<group>"; };
+		B777CBC10DA156DA00ADF49F /* MemoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryView.h; sourceTree = "<group>"; };
+		B78F672C0C0CEFE6002C586A /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
+		B78F67300C0CF86F002C586A /* CLGleanApp.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CLGleanApp.cpp; sourceTree = "<group>"; };
+		B78F67310C0CF86F002C586A /* CLGleanApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CLGleanApp.h; sourceTree = "<group>"; };
+		B78F67320C0CF86F002C586A /* CLGleanStandaloneMain.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CLGleanStandaloneMain.cpp; sourceTree = "<group>"; };
+		B78F67D50C0D0469002C586A /* CLGLEAN */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CLGLEAN; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A703310D9D983200937B88 /* WmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WmView.h; sourceTree = "<group>"; };
+		B7A703320D9D995200937B88 /* WmView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WmView.cpp; sourceTree = "<group>"; };
+		B7A82E6E0C1641B200B3656C /* create_Dummy_device.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = create_Dummy_device.cpp; sourceTree = "<group>"; };
+		B7A82E6F0C1641B200B3656C /* Dummy_device.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Dummy_device.cpp; sourceTree = "<group>"; };
+		B7A82E700C1641B200B3656C /* Dummy_device.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Dummy_device.h; sourceTree = "<group>"; };
+		B7BBB02D0C060B440052E753 /* Color_map.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Color_map.cpp; sourceTree = "<group>"; };
+		B7BBB02E0C060B440052E753 /* Color_map.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Color_map.h; sourceTree = "<group>"; };
+		B7BBB02F0C060B440052E753 /* Drawing_shape.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Drawing_shape.h; sourceTree = "<group>"; };
+		B7BBB0300C060B440052E753 /* Drawing_shape_pool.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Drawing_shape_pool.cpp; sourceTree = "<group>"; };
+		B7BBB0310C060B440052E753 /* Drawing_shape_pool.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Drawing_shape_pool.h; sourceTree = "<group>"; };
+		B7BBB0320C060B440052E753 /* Drawing_shapes.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = Drawing_shapes.cpp; sourceTree = "<group>"; };
+		B7BBB0330C060B440052E753 /* Drawing_shapes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = Drawing_shapes.h; sourceTree = "<group>"; };
+		B7BBB0340C060B440052E753 /* VisualView.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VisualView.cpp; sourceTree = "<group>"; };
+		B7BBB0350C060B440052E753 /* VisualView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VisualView.h; sourceTree = "<group>"; };
+		B7BBB0360C060B440052E753 /* VisualViewObject.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = VisualViewObject.cpp; sourceTree = "<group>"; };
+		B7BBB0370C060B440052E753 /* VisualViewObject.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VisualViewObject.h; sourceTree = "<group>"; };
+		B7BBB0380C060B440052E753 /* TextView.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = TextView.cpp; sourceTree = "<group>"; };
+		B7BBB0390C060B440052E753 /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		B7D4D6F81D218C1D00F403EA /* GLEANKernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEANKernel.framework; path = "/Users/kieras/Documents/Programming/GLEAN work/OSS GLEAN/GLEAN/GLEANApp/../../../../../../Library/Frameworks/GLEANKernel.framework"; sourceTree = "<absolute>"; };
+		B7F4D2940C03740800986A1C /* AppBase.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppBase.cpp; sourceTree = "<group>"; };
+		B7F4D2950C03740800986A1C /* AppBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppBase.h; sourceTree = "<group>"; };
+		B7F4D2980C03740800986A1C /* AppClassesUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppClassesUtilities.cpp; sourceTree = "<group>"; };
+		B7F4D2990C03740800986A1C /* AppClassesUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppClassesUtilities.h; sourceTree = "<group>"; };
+		B7F4D29A0C03740800986A1C /* AppColorUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppColorUtilities.cpp; sourceTree = "<group>"; };
+		B7F4D29B0C03740800986A1C /* AppColorUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppColorUtilities.h; sourceTree = "<group>"; };
+		B7F4D29C0C03740800986A1C /* AppDialogBase.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppDialogBase.cpp; sourceTree = "<group>"; };
+		B7F4D29D0C03740800986A1C /* AppDialogBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppDialogBase.h; sourceTree = "<group>"; };
+		B7F4D29E0C03740800986A1C /* AppDrawingWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppDrawingWindow.cpp; sourceTree = "<group>"; };
+		B7F4D29F0C03740800986A1C /* AppDrawingWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppDrawingWindow.h; sourceTree = "<group>"; };
+		B7F4D2A00C03740800986A1C /* AppNavDialogs.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppNavDialogs.cpp; sourceTree = "<group>"; };
+		B7F4D2A10C03740800986A1C /* AppNavDialogs.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppNavDialogs.h; sourceTree = "<group>"; };
+		B7F4D2A20C03740800986A1C /* AppTextWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppTextWindow.cpp; sourceTree = "<group>"; };
+		B7F4D2A30C03740800986A1C /* AppTextWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppTextWindow.h; sourceTree = "<group>"; };
+		B7F4D2A40C03740800986A1C /* AppTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppTimer.cpp; sourceTree = "<group>"; };
+		B7F4D2A50C03740800986A1C /* AppTimer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppTimer.h; sourceTree = "<group>"; };
+		B7F4D2A60C03740800986A1C /* AppWindowBase.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppWindowBase.cpp; sourceTree = "<group>"; };
+		B7F4D2A70C03740800986A1C /* AppWindowBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppWindowBase.h; sourceTree = "<group>"; };
+		B7F4D2B20C03743B00986A1C /* BreakDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = BreakDialog.cpp; sourceTree = "<group>"; };
+		B7F4D2B30C03743B00986A1C /* BreakDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = BreakDialog.h; sourceTree = "<group>"; };
+		B7F4D2B60C03743B00986A1C /* DisplayDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayDialog.cpp; sourceTree = "<group>"; };
+		B7F4D2B70C03743B00986A1C /* DisplayDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DisplayDialog.h; sourceTree = "<group>"; };
+		B7F4D2BE0C03743B00986A1C /* GleanApp.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GleanApp.cpp; sourceTree = "<group>"; };
+		B7F4D2BF0C03743B00986A1C /* GleanApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = GleanApp.h; sourceTree = "<group>"; };
+		B7F4D2C00C03743B00986A1C /* GleanAppmain.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = GleanAppmain.cpp; sourceTree = "<group>"; };
+		B7F4D2C10C03743B00986A1C /* LogDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = LogDialog.cpp; sourceTree = "<group>"; };
+		B7F4D2C20C03743B00986A1C /* LogDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LogDialog.h; sourceTree = "<group>"; };
+		B7F4D2C30C03743B00986A1C /* RunDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = RunDialog.cpp; sourceTree = "<group>"; };
+		B7F4D2C40C03743B00986A1C /* RunDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RunDialog.h; sourceTree = "<group>"; };
+		B7F4D2CB0C03743B00986A1C /* TraceDialog.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = TraceDialog.cpp; sourceTree = "<group>"; };
+		B7F4D2CC0C03743B00986A1C /* TraceDialog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TraceDialog.h; sourceTree = "<group>"; };
+		B7F4D2F60C03750D00986A1C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/AppClasses.nib; sourceTree = "<group>"; };
+		B7F4D2F80C03750D00986A1C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/GLEANApp.nib; sourceTree = "<group>"; };
+		B7F4D3830C03789300986A1C /* testheader.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = testheader.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				B7D4D6F91D218C1D00F403EA /* GLEANKernel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78F67D30C0D0469002C586A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A82E610C16410300B3656C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				508344B209E5C41E0093A071 /* GLEANX.app */,
+				B78F67D50C0D0469002C586A /* CLGLEAN */,
+				B72AD03C0E11D81B0017A37B /* libDummy_device.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* GLEANX */ = {
+			isa = PBXGroup;
+			children = (
+				5048396909E3304600765E4B /* Configuration Files */,
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = GLEANX;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B7A82E6D0C1641B200B3656C /* Dummy_device */,
+				B7F4D2930C03740800986A1C /* AppClasses */,
+				B7BBB02C0C060B440052E753 /* AppViewClasses */,
+				32DBCF6D0370B57F00C91783 /* GLEANX_Prefix.pch */,
+				B7232AE20B6EBDB800CD222E /* GLEANApp */,
+				B78F672F0C0CF86F002C586A /* CLGleanApp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4D2F50C03750D00986A1C /* AppClasses.nib */,
+				B7F4D2F70C03750D00986A1C /* GLEANApp.nib */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+				B78F672C0C0CEFE6002C586A /* Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				B7D4D6F81D218C1D00F403EA /* GLEANKernel.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		5048396909E3304600765E4B /* Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+				5048396D09E3307300765E4B /* GLEANXProj.xcconfig */,
+				5048396E09E3307300765E4B /* GLEANXTarget.xcconfig */,
+			);
+			name = "Configuration Files";
+			sourceTree = "<group>";
+		};
+		B7232AE20B6EBDB800CD222E /* GLEANApp */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4D2C00C03743B00986A1C /* GleanAppmain.cpp */,
+				B7F4D2BF0C03743B00986A1C /* GleanApp.h */,
+				B7F4D2BE0C03743B00986A1C /* GleanApp.cpp */,
+				B7F4D2B20C03743B00986A1C /* BreakDialog.cpp */,
+				B7F4D2B30C03743B00986A1C /* BreakDialog.h */,
+				B7F4D2B60C03743B00986A1C /* DisplayDialog.cpp */,
+				B7F4D2B70C03743B00986A1C /* DisplayDialog.h */,
+				B7F4D2C10C03743B00986A1C /* LogDialog.cpp */,
+				B7F4D2C20C03743B00986A1C /* LogDialog.h */,
+				B7F4D2C30C03743B00986A1C /* RunDialog.cpp */,
+				B7F4D2C40C03743B00986A1C /* RunDialog.h */,
+				B7F4D2CB0C03743B00986A1C /* TraceDialog.cpp */,
+				B7F4D2CC0C03743B00986A1C /* TraceDialog.h */,
+			);
+			path = GLEANApp;
+			sourceTree = "<group>";
+		};
+		B78F672F0C0CF86F002C586A /* CLGleanApp */ = {
+			isa = PBXGroup;
+			children = (
+				B78F67300C0CF86F002C586A /* CLGleanApp.cpp */,
+				B78F67310C0CF86F002C586A /* CLGleanApp.h */,
+				B78F67320C0CF86F002C586A /* CLGleanStandaloneMain.cpp */,
+			);
+			path = CLGleanApp;
+			sourceTree = "<group>";
+		};
+		B7A82E6D0C1641B200B3656C /* Dummy_device */ = {
+			isa = PBXGroup;
+			children = (
+				B7A82E6E0C1641B200B3656C /* create_Dummy_device.cpp */,
+				B7A82E6F0C1641B200B3656C /* Dummy_device.cpp */,
+				B7A82E700C1641B200B3656C /* Dummy_device.h */,
+			);
+			path = Dummy_device;
+			sourceTree = "<group>";
+		};
+		B7BBB02C0C060B440052E753 /* AppViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B777CBC10DA156DA00ADF49F /* MemoryView.h */,
+				B7A703320D9D995200937B88 /* WmView.cpp */,
+				B7A703310D9D983200937B88 /* WmView.h */,
+				B777CAA20DA13E2000ADF49F /* ObjectView.cpp */,
+				B777CAA30DA13E2000ADF49F /* ObjectView.h */,
+				B7BBB02D0C060B440052E753 /* Color_map.cpp */,
+				B7BBB02E0C060B440052E753 /* Color_map.h */,
+				B7BBB02F0C060B440052E753 /* Drawing_shape.h */,
+				B7BBB0300C060B440052E753 /* Drawing_shape_pool.cpp */,
+				B7BBB0310C060B440052E753 /* Drawing_shape_pool.h */,
+				B7BBB0320C060B440052E753 /* Drawing_shapes.cpp */,
+				B7BBB0330C060B440052E753 /* Drawing_shapes.h */,
+				B7BBB0340C060B440052E753 /* VisualView.cpp */,
+				B7BBB0350C060B440052E753 /* VisualView.h */,
+				B7BBB0360C060B440052E753 /* VisualViewObject.cpp */,
+				B7BBB0370C060B440052E753 /* VisualViewObject.h */,
+				B7BBB0380C060B440052E753 /* TextView.cpp */,
+				B7BBB0390C060B440052E753 /* TextView.h */,
+			);
+			path = AppViewClasses;
+			sourceTree = "<group>";
+		};
+		B7F4D2930C03740800986A1C /* AppClasses */ = {
+			isa = PBXGroup;
+			children = (
+				B7F4D2940C03740800986A1C /* AppBase.cpp */,
+				B7F4D2950C03740800986A1C /* AppBase.h */,
+				B7F4D2980C03740800986A1C /* AppClassesUtilities.cpp */,
+				B7F4D2990C03740800986A1C /* AppClassesUtilities.h */,
+				B7F4D29A0C03740800986A1C /* AppColorUtilities.cpp */,
+				B7F4D29B0C03740800986A1C /* AppColorUtilities.h */,
+				B7F4D29C0C03740800986A1C /* AppDialogBase.cpp */,
+				B7F4D29D0C03740800986A1C /* AppDialogBase.h */,
+				B7F4D29E0C03740800986A1C /* AppDrawingWindow.cpp */,
+				B7F4D29F0C03740800986A1C /* AppDrawingWindow.h */,
+				B7F4D2A10C03740800986A1C /* AppNavDialogs.h */,
+				B7F4D2A00C03740800986A1C /* AppNavDialogs.cpp */,
+				B7F4D2A20C03740800986A1C /* AppTextWindow.cpp */,
+				B7F4D2A30C03740800986A1C /* AppTextWindow.h */,
+				B7F4D2A40C03740800986A1C /* AppTimer.cpp */,
+				B7F4D2A50C03740800986A1C /* AppTimer.h */,
+				B7F4D2A60C03740800986A1C /* AppWindowBase.cpp */,
+				B7F4D2A70C03740800986A1C /* AppWindowBase.h */,
+				B7F4D3830C03789300986A1C /* testheader.cpp */,
+			);
+			path = AppClasses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* GLEANApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "GLEANApp" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLEANApp;
+			productInstallPath = "$(HOME)/Applications";
+			productName = GLEANX;
+			productReference = 508344B209E5C41E0093A071 /* GLEANX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B78F67D40C0D0469002C586A /* CLGLEAN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B78F67D70C0D0487002C586A /* Build configuration list for PBXNativeTarget "CLGLEAN" */;
+			buildPhases = (
+				B78F67D20C0D0469002C586A /* Sources */,
+				B78F67D30C0D0469002C586A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLGLEAN;
+			productName = CLGLEAN;
+			productReference = B78F67D50C0D0469002C586A /* CLGLEAN */;
+			productType = "com.apple.product-type.tool";
+		};
+		B7A82E5B0C16410300B3656C /* Dummy_device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7A82E620C16410300B3656C /* Build configuration list for PBXNativeTarget "Dummy_device" */;
+			buildPhases = (
+				B7A82E5E0C16410300B3656C /* Sources */,
+				B7A82E610C16410300B3656C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dummy_device;
+			productName = TLD_device;
+			productReference = B72AD03C0E11D81B0017A37B /* libDummy_device.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+			};
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "GLEANX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 20286C29FDCF999611CA2CEA /* GLEANX */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* GLEANApp */,
+				B78F67D40C0D0469002C586A /* CLGLEAN */,
+				B7A82E5B0C16410300B3656C /* Dummy_device */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				B7F4D2F90C03750D00986A1C /* AppClasses.nib in Resources */,
+				B7F4D2FA0C03750D00986A1C /* GLEANApp.nib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F4D2AC0C03740800986A1C /* AppDialogBase.cpp in Sources */,
+				B7F4D2AD0C03740800986A1C /* AppDrawingWindow.cpp in Sources */,
+				B7F4D2AE0C03740800986A1C /* AppNavDialogs.cpp in Sources */,
+				B7F4D2AF0C03740800986A1C /* AppTextWindow.cpp in Sources */,
+				B7F4D2B00C03740800986A1C /* AppTimer.cpp in Sources */,
+				B7F4D2B10C03740800986A1C /* AppWindowBase.cpp in Sources */,
+				B7F4D2CD0C03743B00986A1C /* BreakDialog.cpp in Sources */,
+				B7F4D2CF0C03743B00986A1C /* DisplayDialog.cpp in Sources */,
+				B7F4D2D30C03743B00986A1C /* GleanApp.cpp in Sources */,
+				B7F4D2D40C03743B00986A1C /* GleanAppmain.cpp in Sources */,
+				B7F4D2D50C03743B00986A1C /* LogDialog.cpp in Sources */,
+				B7F4D2D60C03743B00986A1C /* RunDialog.cpp in Sources */,
+				B7F4D2DA0C03743B00986A1C /* TraceDialog.cpp in Sources */,
+				B7F4D3840C03789300986A1C /* testheader.cpp in Sources */,
+				B7BBB03A0C060B440052E753 /* Color_map.cpp in Sources */,
+				B7BBB03B0C060B440052E753 /* Drawing_shape_pool.cpp in Sources */,
+				B7BBB03C0C060B440052E753 /* Drawing_shapes.cpp in Sources */,
+				B7BBB03D0C060B440052E753 /* VisualView.cpp in Sources */,
+				B7BBB03E0C060B440052E753 /* VisualViewObject.cpp in Sources */,
+				B7BBB03F0C060B440052E753 /* TextView.cpp in Sources */,
+				B78F67DC0C0D04A4002C586A /* AppColorUtilities.cpp in Sources */,
+				B78F67DD0C0D04A5002C586A /* AppClassesUtilities.cpp in Sources */,
+				B78F67DE0C0D04A6002C586A /* AppBase.cpp in Sources */,
+				B7A703330D9D995200937B88 /* WmView.cpp in Sources */,
+				B777CAA40DA13E2000ADF49F /* ObjectView.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78F67D20C0D0469002C586A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78F67E00C0D04BF002C586A /* CLGleanApp.cpp in Sources */,
+				B78F67E10C0D04C0002C586A /* CLGleanStandaloneMain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7A82E5E0C16410300B3656C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7A82E710C1641B200B3656C /* create_Dummy_device.cpp in Sources */,
+				B7A82E720C1641B200B3656C /* Dummy_device.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B7F4D2F50C03750D00986A1C /* AppClasses.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F4D2F60C03750D00986A1C /* English */,
+			);
+			name = AppClasses.nib;
+			sourceTree = "<group>";
+		};
+		B7F4D2F70C03750D00986A1C /* GLEANApp.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7F4D2F80C03750D00986A1C /* English */,
+			);
+			name = GLEANApp.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B78F67D80C0D0487002C586A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = CLGLEAN;
+			};
+			name = Debug;
+		};
+		B78F67D90C0D0487002C586A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(HOME)/bin";
+				PRODUCT_NAME = CLGLEAN;
+			};
+			name = Release;
+		};
+		B7A82E630C16410300B3656C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
+					"\"$(SRCROOT)/../../Library/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-L.",
+					"-lGleanLib",
+				);
+				PRODUCT_NAME = Dummy_device;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		B7A82E640C16410300B3656C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = Dummy_device;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5048396E09E3307300765E4B /* GLEANXTarget.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ENABLE_ASM_KEYWORD = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.GLEANX;
+				PRODUCT_NAME = GLEANX;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5048396E09E3307300765E4B /* GLEANXTarget.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Library/Frameworks\"",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.GLEANX;
+				PRODUCT_NAME = GLEANX;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5048396D09E3307300765E4B /* GLEANXProj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Library/Frameworks";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_ENABLE_ASM_KEYWORD = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_FAST_OBJC_DISPATCH = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = macosx10.11;
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5048396D09E3307300765E4B /* GLEANXProj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Library/Frameworks";
+				GCC_CW_ASM_SYNTAX = NO;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_ENABLE_ASM_KEYWORD = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_FAST_OBJC_DISPATCH = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.cpp;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.11;
+				SEPARATE_STRIP = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B78F67D70C0D0487002C586A /* Build configuration list for PBXNativeTarget "CLGLEAN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78F67D80C0D0487002C586A /* Debug */,
+				B78F67D90C0D0487002C586A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7A82E620C16410300B3656C /* Build configuration list for PBXNativeTarget "Dummy_device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7A82E630C16410300B3656C /* Debug */,
+				B7A82E640C16410300B3656C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "GLEANApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "GLEANX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

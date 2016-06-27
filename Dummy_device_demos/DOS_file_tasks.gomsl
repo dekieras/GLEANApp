@@ -1,0 +1,147 @@
+// Simplified: 
+Define_model: "DOS File Maintenance Example"
+Starting_goal is Perform Disk_Maintenance.
+
+
+// first task is to delete the file "Work/file1.txt"
+Task_item: T1 
+	Name is First.
+	Type is delete_file.
+	Filename is "file1.txt".
+	Enclosing_directory is "Work".
+	Next is T2.
+	
+// next task is to move the file "Work/file2.txt" to the directory "Documents"
+Task_item: T2
+	Name is T2.
+	Type is move_file.
+	Filename is "file2.txt".
+	Enclosing_directory is "Work".
+	Destination_directory is "Documents".
+	Next is T3.
+	
+// next task is to delete the "Temp" directory
+Task_item: T3
+	Name is T3.
+	Type is delete_directory.
+	Directory_name is "Temp".
+	Next is T4.
+
+// last task is to move the "Work" directory into the "Documents" directory
+Task_item: T4
+	Name is T4.
+	Type is move_directory.
+	Directory_name is "Work".
+	Destination_directory is "Documents".
+	Next is None.
+		
+// assuming Files, directories are visible on screen
+
+Method_for_goal: Perform Disk_Maintenance
+	Step 1. Store First under <current_task_name>.
+	Step 2. Decide: If <current_task_name> is None, 
+		Then Delete <current_task>; Delete <current_task_name>;
+		Return_with_goal_accomplished.
+	Step 3. Get_task_item_whose Name is <current_task_name> 
+		and_store_under <current_task>.
+	Step 3. Accomplish_goal: Perform Disk_Task.
+	Step 4. Store Next of <current_task> under <current_task_name>.
+	Step 5. Goto 2.
+
+	
+Selection_rules_for_goal: Perform Disk_Task
+	If Type of <current_task> is delete_file, Then 
+		Accomplish_goal: delete file.
+	If Type of <current_task> is move_file, Then 
+		Accomplish_goal: move file.
+	If Type of <current_task> is delete_directory, Then 
+		Accomplish_goal: delete directory.
+	If Type of <current_task> is move_directory, Then 
+		Accomplish_goal: move directory.
+	Return_with_goal_accomplished.
+
+// assuming directory is current directory?
+
+Method_for_goal: delete file
+	Step 1. Accomplish_goal: perform command using 
+		"ERASE",
+		Enclosing_directory of <current_task>, Filename of <current_task>, 
+		Nil, and Nil.
+	Step 2. Return_with_goal_accomplished.
+
+Method_for_goal: move file
+	Step 1. Accomplish_goal: copy file.
+	Step 2. Accomplish_goal: delete file.
+	Step 3. Return_with_goal_accomplished.
+
+Method_for_goal: copy file
+	Step 1. Accomplish_goal: perform command using 
+		"COPY",
+		Enclosing_directory of <current_task>, Filename of <current_task>, 
+		Destination_directory of <current_task>, Filename of <current_task>. 
+	Step 2. Return_with_goal_accomplished.
+
+// the file specs maybe should be separate task items?
+
+Method_for_goal: delete directory
+	Step 1. Accomplish_goal: delete all_files_in_directory.
+	Step 2. Accomplish_goal: remove directory.
+	Step 3. Return_with_goal_accomplished.
+
+Method_for_goal: delete all_files_in_directory
+	Step 1. Accomplish_goal: perform command using 
+		"ERASE",
+		Directory_name of <current_task>, "*.*" , 
+		Nil, Nil. 
+	Step 2. Return_with_goal_accomplished.
+
+Method_for_goal: remove directory 
+	Step 1. Accomplish_goal: perform command using 
+		"RMDIR",
+		Directory_name of <current_task>, Nil, 
+		Nil, Nil. 
+	Step 2. Return_with_goal_accomplished.
+	
+
+Method_for_goal: move directory
+	Step 1. Accomplish_goal: copy directory.
+	Step 2. Accomplish_goal: delete directory.
+	Step 3. Return_with_goal_accomplished.
+
+Method_for_goal: copy directory
+	Step 1. Accomplish_goal: create directory.
+	Step 2. Accomplish_goal: copy all_files_in_directory.
+	Step 3. Return_with_goal_accomplished.
+
+Method_for_goal: create directory
+	Step 1. Accomplish_goal: perform command using 
+		"MKDIR",
+		Destination_directory of <current_task>, Nil,  // which directory?
+		Nil, Nil. 
+	Step 2. Return_with_goal_accomplished.
+
+Method_for_goal: copy all_files_in_directory
+	Step 1. Accomplish_goal: perform command using 
+		"COPY",
+		Directory_name of <current_task>, "*.*" ,  
+		Destination_directory of <current_task>, "*.*" .
+	Step 2. Return_with_goal_accomplished.
+
+Method_for_goal: perform command using <command>, <directory1>, <filename1>, <directory2>, and <filename2>
+	Step 1. Type_in <command>.
+	Step 2. Accomplish_goal: Enter filespec using <directory1>, and <filename1>.
+	Step 3. Decide: If <directory2> is Nil,  and <filename2> is Nil, Then Goto 5.
+	Step 4. Accomplish_goal: Enter filespec using <directory2>, and <filename2>.
+	Step 5. Verify "command is correctly entered".
+	Step 6. Keystroke CR.
+	Step 7. Return_with_goal_accomplished.
+
+Method_for_goal: Enter filespec using <directory>, and <filename>
+	Step 1. Keystroke SPACE.
+	Step 2. Decide: If <directory> is Nil, Then Goto 5.
+	Step 3. Type_in <directory>.
+	Step 5. Decide: If <filename> is Nil, Then Return_with_goal_accomplished.
+	Step 4. Decide: If <directory> is_not Nil, Then Keystroke "\".
+	Step 6. Type_in <filename>.
+	Step 7. Return_with_goal_accomplished.
+

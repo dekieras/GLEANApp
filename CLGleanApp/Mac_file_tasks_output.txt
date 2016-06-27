@@ -1,0 +1,177 @@
+
+[Session started at 2007-09-26 13:14:28 -0400.]
+Enter full path of device dylib: libDummy_device.dylib
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: f
+Enter a gomsl filename (no embedded spaces): Mac_file_tasks.gomsl
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: c
+
+Compiling Mac_file_tasks.gomsl
+Parsing done.
+Model was parsed successfully.
+Mac_file_tasks.gomsl compiled and executable
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: r
+single_step mode is enabled
+Will pause after each significant step
+Step labels only will be listed
+Simulation initialized with 11 processors
+*** Simulation is starting ***
+0:->G
+33300:Human:Cognitive_processor: No more steps to execute.
+Simulation Done!
+Run time was 33.35 sec (simulated), 0 sec (process), 0 sec (wallclock)
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: r
+single_step mode is enabled
+Will pause after each significant step
+Step labels only will be listed
+Simulation initialized with 11 processors
+*** Simulation is starting ***
+0:->g
+0 Human Main(0): Starting to accomplish Perform Disk_Maintenance
+50 Human Main(0):Step 1 executed
+100 Human Main(0):Step 2 executed
+150 Human Main(0):Step 3 executed
+1450 Human Main(0): Accomplish Perform Disk_Task
+1450 Human Main(0):Step 3 executed
+1500 Human Main(0): Accomplish delete object
+1500 Human Main(0):Step SR Selection executed
+1550 Human Main(0): Accomplish drag object
+1550 Human Main(0):Step 1 executed
+1600 Human Main(0):Step 1 executed
+2900 Human Main(0):Step 2 executed
+4450 Human Main(0):Step 3 executed
+4600 Human Main(0):Step 4 executed
+5900 Human Main(0):Step 5 executed
+7050 Human Main(0):Step 6 executed
+8300 Human Main(0):Step 7 executed
+8450 Human Main(0): Return with drag object accomplished
+8450 Human Main(0):Step 8 executed
+8500 Human Main(0): Return with delete object accomplished
+8500 Human Main(0):Step 2 executed
+8550 Human Main(0): Return with Perform Disk_Task accomplished
+8550 Human Main(0):Step SR Return executed
+8600 Human Main(0):Step 4 executed
+8650 Human Main(0):Step 5 executed
+8700 Human Main(0):Step 2 executed
+8750 Human Main(0):Step 3 executed
+10050 Human Main(0): Accomplish Perform Disk_Task
+10050 Human Main(0):Step 3 executed
+10100 Human Main(0): Accomplish move object
+10100 Human Main(0):Step SR Selection executed
+10150 Human Main(0): Accomplish drag object
+10150 Human Main(0):Step 1 executed
+10200 Human Main(0):Step 1 executed
+11500 Human Main(0):Step 2 executed
+12650 Human Main(0):Step 3 executed
+12800 Human Main(0):Step 4 executed
+14100 Human Main(0):Step 5 executed
+15250 Human Main(0):Step 6 executed
+16500 Human Main(0):Step 7 executed
+16650 Human Main(0): Return with drag object accomplished
+16650 Human Main(0):Step 8 executed
+16700 Human Main(0): Return with move object accomplished
+16700 Human Main(0):Step 2 executed
+16750 Human Main(0): Return with Perform Disk_Task accomplished
+16750 Human Main(0):Step SR Return executed
+16800 Human Main(0):Step 4 executed
+16850 Human Main(0):Step 5 executed
+16900 Human Main(0):Step 2 executed
+16950 Human Main(0):Step 3 executed
+18250 Human Main(0): Accomplish Perform Disk_Task
+18250 Human Main(0):Step 3 executed
+18300 Human Main(0): Accomplish delete object
+18300 Human Main(0):Step SR Selection executed
+18350 Human Main(0): Accomplish drag object
+18350 Human Main(0):Step 1 executed
+18400 Human Main(0):Step 1 executed
+19700 Human Main(0):Step 2 executed
+20850 Human Main(0):Step 3 executed
+21000 Human Main(0):Step 4 executed
+22300 Human Main(0):Step 5 executed
+23450 Human Main(0):Step 6 executed
+24700 Human Main(0):Step 7 executed
+24850 Human Main(0): Return with drag object accomplished
+24850 Human Main(0):Step 8 executed
+24900 Human Main(0): Return with delete object accomplished
+24900 Human Main(0):Step 2 executed
+24950 Human Main(0): Return with Perform Disk_Task accomplished
+24950 Human Main(0):Step SR Return executed
+25000 Human Main(0):Step 4 executed
+25050 Human Main(0):Step 5 executed
+25100 Human Main(0):Step 2 executed
+25150 Human Main(0):Step 3 executed
+26450 Human Main(0): Accomplish Perform Disk_Task
+26450 Human Main(0):Step 3 executed
+26500 Human Main(0): Accomplish move object
+26500 Human Main(0):Step SR Selection executed
+26550 Human Main(0): Accomplish drag object
+26550 Human Main(0):Step 1 executed
+26600 Human Main(0):Step 1 executed
+27900 Human Main(0):Step 2 executed
+29050 Human Main(0):Step 3 executed
+29200 Human Main(0):Step 4 executed
+30500 Human Main(0):Step 5 executed
+31650 Human Main(0):Step 6 executed
+32900 Human Main(0):Step 7 executed
+33050 Human Main(0): Return with drag object accomplished
+33050 Human Main(0):Step 8 executed
+33100 Human Main(0): Return with move object accomplished
+33100 Human Main(0):Step 2 executed
+33150 Human Main(0): Return with Perform Disk_Task accomplished
+33150 Human Main(0):Step SR Return executed
+33200 Human Main(0):Step 4 executed
+33250 Human Main(0):Step 5 executed
+33300 Human Main(0): Return with Perform Disk_Maintenance accomplished
+33300 Human Main(0):Step 2 executed
+33300:Human:Cognitive_processor: No more steps to execute.
+Simulation Done!
+Run time was 33.35 sec (simulated), 0 sec (process), 0 sec (wallclock)
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: w
+Workload reports will be output
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: r
+single_step mode is enabled
+Will pause after each significant step
+Step labels only will be listed
+Simulation initialized with 11 processors
+*** Simulation is starting ***
+0:->G
+33300:Human:Cognitive_processor: No more steps to execute.
+Simulation Done!
+Run time was 33.35 sec (simulated), 0 sec (process), 0 sec (wallclock)
+Workload Method Execution Profile
+Total Run Duration:     33.350 seconds
+Total Method Execution Time:     33.300 seconds
+  Freq.    Subtotal  Avg. Time  % of Total   Method for goal/Activity Type
+Perform Disk_Maintenance:
+     1      33.300      33.300      100.00  Method Execution
+     8       9.992       1.249       30.01  Visual Actions
+    16       9.983       0.624       29.98  Manual Actions
+    23      33.300        2.59           3  WM Changes, duration, avg, peak
+
+Perform Disk_Task:
+     4      27.200       6.800       81.68  Method Execution
+     8       9.992       1.249       30.01  Visual Actions
+    16       9.983       0.624       29.98  Manual Actions
+    12      27.200        0.78           1  WM Changes, duration, avg, peak
+
+delete object:
+     2      13.600       6.800       40.84  Method Execution
+     4       4.996       1.249       15.00  Visual Actions
+     8       5.191       0.649       15.59  Manual Actions
+     6      13.600        0.79           1  WM Changes, duration, avg, peak
+
+drag object:
+     4      26.400       6.600       79.28  Method Execution
+     8       9.992       1.249       30.01  Visual Actions
+    16       9.983       0.624       29.98  Manual Actions
+    12      26.400        0.80           1  WM Changes, duration, avg, peak
+
+move object:
+     2      13.200       6.600       39.64  Method Execution
+     4       4.996       1.249       15.00  Visual Actions
+     8       4.792       0.599       14.39  Manual Actions
+     6      13.200        0.79           1  WM Changes, duration, avg, peak
+
+Enter command: f, c, l, d, r, s, t, w, q, R, ?: q
+Quitting
+
+CLGLEAN has exited with status 0.

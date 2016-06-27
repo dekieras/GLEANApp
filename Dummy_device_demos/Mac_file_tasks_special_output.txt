@@ -1,0 +1,1666 @@
+Event queue had 2 left-over events
+Simulation initialized with 11 processors
+*** Simulation is starting ***
+0 Human Main(0): Starting to accomplish Perform Disk_Maintenance
+Contents of WM tag store:
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: Nil
+High_Level Memory: Empty
+50 Human Main(0): executed: Step 0. Store Trash_can_icon under <trash>.
+Contents of WM tag store:
+<current_task_name> First
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: Nil
+High_Level Memory: Empty
+100 Human Main(0): executed: Step 1. Store First under <current_task_name>.
+Contents of WM tag store:
+<current_task_name> First
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: Nil
+High_Level Memory: Empty
+150 Human Main(0): executed: Step 2. Decide: 
+If <current_task_name> is None 
+Then Delete <current_task>; Delete <current_task_name>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task_name> First
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: Nil
+High_Level Memory: Empty
+200 Human Main(0): executed: Step 3. Get_task_item_whose Name is <current_task_name> and_store_under <current_task>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+1500 Human Main(0): executed: Step 3. Accomplish_goal: Perform Disk_Task.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object_name> file1.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+1550 Human Main(0): executed: Step SR Selection. Decide: 
+If Type of <current_task> is delete_file 
+Then Accomplish_goal: delete object using Filename of <current_task>; 
+If Type of <current_task> is move_file 
+Then Accomplish_goal: move object using Filename of <current_task>, Destination_directory of <current_task>; 
+If Type of <current_task> is delete_directory 
+Then Accomplish_goal: delete object using Directory_name of <current_task>; 
+If Type of <current_task> is move_directory 
+Then Accomplish_goal: move object using Directory_name of <current_task>, Destination_directory of <current_task>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+1600 Human Main(0): executed: Step 1. Accomplish_goal: trash object using <object_name>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt
+  file2_icon:  Label:file2.txt
+  In focus: Nil
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+1650 Human Main(0): executed: Step 1. Look_for_object_whose Label is <object> and_store_under <target>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<target> file1_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:In_focus
+  file2_icon:  Label:file2.txt
+  In focus: file1_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+2950 Human Main(0): executed: Step 2. Point_to <target>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<target> file1_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:In_focus
+  file2_icon:  Label:file2.txt
+  In focus: file1_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+4500 Human Main(0): executed: Step 3. Hold_down Mouse_Button.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<target> file1_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:In_focus
+  file2_icon:  Label:file2.txt
+  In focus: file1_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+4650 Human Main(0): executed: Step 4. Look_at <trash>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<target> file1_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+4950 Human Main(0): executed: Step 5. Point_to <trash>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<target> file1_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+6100 Human Main(0): executed: Step 6. Mental: Verify icon is at destination.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object> file1.txt
+<object_name> file1.txt
+<target> file1_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7350 Human Main(0): executed: Step 7. Release  Mouse_Button.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<object_name> file1.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7500 Human Main(0): executed: Step 8. Delete <target>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7550 Human Main(0): executed: Step 2. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> First
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7600 Human Main(0): executed: Step SR Return. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7650 Human Main(0): executed: Step 4. Store Next of <current_task> under <current_task_name>.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7700 Human Main(0): executed: Step 5. Goto 2.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7750 Human Main(0): executed: Step 2. Decide: 
+If <current_task_name> is None 
+Then Delete <current_task>; Delete <current_task_name>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T1
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:In_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T1
+High_Level Memory: Empty
+7800 Human Main(0): executed: Step 3. Get_task_item_whose Name is <current_task_name> and_store_under <current_task>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+9100 Human Main(0): executed: Step 3. Accomplish_goal: Perform Disk_Task.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination_directory> Documents
+<object_name> file2.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+9150 Human Main(0): executed: Step SR Selection. Decide: 
+If Type of <current_task> is delete_file 
+Then Accomplish_goal: delete object using Filename of <current_task>; 
+If Type of <current_task> is move_file 
+Then Accomplish_goal: move object using Filename of <current_task>, Destination_directory of <current_task>; 
+If Type of <current_task> is delete_directory 
+Then Accomplish_goal: delete object using Directory_name of <current_task>; 
+If Type of <current_task> is move_directory 
+Then Accomplish_goal: move object using Directory_name of <current_task>, Destination_directory of <current_task>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+9200 Human Main(0): executed: Step 1. Accomplish_goal: drag object using <object_name>, <destination_directory>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+9250 Human Main(0): executed: Step 1. Look_for_object_whose Label is <object> and_store_under <target>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<target> file2_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:In_focus
+  In focus: file2_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+10550 Human Main(0): executed: Step 2. Point_to <target>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<target> file2_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:In_focus
+  In focus: file2_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+11700 Human Main(0): executed: Step 3. Hold_down Mouse_Button.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<target> file2_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:In_focus
+  In focus: file2_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+11850 Human Main(0): executed: Step 4. Look_for_object_whose Label is <destination> and_store_under <target>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<target> Documents_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+13150 Human Main(0): executed: Step 5. Point_to <target>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<target> Documents_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+14300 Human Main(0): executed: Step 6. Mental: Verify icon is at destination.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination> Documents
+<destination_directory> Documents
+<object> file2.txt
+<object_name> file2.txt
+<target> Documents_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15550 Human Main(0): executed: Step 7. Release  Mouse_Button.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<destination_directory> Documents
+<object_name> file2.txt
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15700 Human Main(0): executed: Step 8. Delete <target>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15750 Human Main(0): executed: Step 2. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T2
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15800 Human Main(0): executed: Step SR Return. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15850 Human Main(0): executed: Step 4. Store Next of <current_task> under <current_task_name>.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15900 Human Main(0): executed: Step 5. Goto 2.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+15950 Human Main(0): executed: Step 2. Decide: 
+If <current_task_name> is None 
+Then Delete <current_task>; Delete <current_task_name>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T2
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:In_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T2
+High_Level Memory: Empty
+16000 Human Main(0): executed: Step 3. Get_task_item_whose Name is <current_task_name> and_store_under <current_task>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+17300 Human Main(0): executed: Step 3. Accomplish_goal: Perform Disk_Task.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object_name> Temp
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+17350 Human Main(0): executed: Step SR Selection. Decide: 
+If Type of <current_task> is delete_file 
+Then Accomplish_goal: delete object using Filename of <current_task>; 
+If Type of <current_task> is move_file 
+Then Accomplish_goal: move object using Filename of <current_task>, Destination_directory of <current_task>; 
+If Type of <current_task> is delete_directory 
+Then Accomplish_goal: delete object using Directory_name of <current_task>; 
+If Type of <current_task> is move_directory 
+Then Accomplish_goal: move object using Directory_name of <current_task>, Destination_directory of <current_task>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+17400 Human Main(0): executed: Step 1. Accomplish_goal: trash object using <object_name>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+17450 Human Main(0): executed: Step 1. Look_for_object_whose Label is <object> and_store_under <target>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<target> Temp_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:In_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Temp_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+18750 Human Main(0): executed: Step 2. Point_to <target>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<target> Temp_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:In_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Temp_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+19900 Human Main(0): executed: Step 3. Hold_down Mouse_Button.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<target> Temp_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:In_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Temp_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+20050 Human Main(0): executed: Step 4. Look_at <trash>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<target> Temp_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+20350 Human Main(0): executed: Step 5. Point_to <trash>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<target> Temp_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+21500 Human Main(0): executed: Step 6. Mental: Verify icon is at destination.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object> Temp
+<object_name> Temp
+<target> Temp_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+22750 Human Main(0): executed: Step 7. Release  Mouse_Button.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<object_name> Temp
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+22900 Human Main(0): executed: Step 8. Delete <target>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+22950 Human Main(0): executed: Step 2. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T3
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+23000 Human Main(0): executed: Step SR Return. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+23050 Human Main(0): executed: Step 4. Store Next of <current_task> under <current_task_name>.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+23100 Human Main(0): executed: Step 5. Goto 2.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+23150 Human Main(0): executed: Step 2. Decide: 
+If <current_task_name> is None 
+Then Delete <current_task>; Delete <current_task_name>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T3
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:In_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Type:move_directory
+  In focus: T3
+High_Level Memory: Empty
+23200 Human Main(0): executed: Step 3. Get_task_item_whose Name is <current_task_name> and_store_under <current_task>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+24500 Human Main(0): executed: Step 3. Accomplish_goal: Perform Disk_Task.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination_directory> Documents
+<object_name> Work
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+24550 Human Main(0): executed: Step SR Selection. Decide: 
+If Type of <current_task> is delete_file 
+Then Accomplish_goal: delete object using Filename of <current_task>; 
+If Type of <current_task> is move_file 
+Then Accomplish_goal: move object using Filename of <current_task>, Destination_directory of <current_task>; 
+If Type of <current_task> is delete_directory 
+Then Accomplish_goal: delete object using Directory_name of <current_task>; 
+If Type of <current_task> is move_directory 
+Then Accomplish_goal: move object using Directory_name of <current_task>, Destination_directory of <current_task>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+24600 Human Main(0): executed: Step 1. Accomplish_goal: drag object using <object_name>, <destination_directory>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:In_focus
+  Work_icon:  Label:Work
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Trash_can_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+24650 Human Main(0): executed: Step 1. Look_for_object_whose Label is <object> and_store_under <target>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<target> Work_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:In_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Work_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+25950 Human Main(0): executed: Step 2. Point_to <target>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<target> Work_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:In_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Work_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+27100 Human Main(0): executed: Step 3. Hold_down Mouse_Button.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<target> Work_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:Out_of_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:In_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Work_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+27250 Human Main(0): executed: Step 4. Look_for_object_whose Label is <destination> and_store_under <target>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<target> Documents_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+28550 Human Main(0): executed: Step 5. Point_to <target>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<target> Documents_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+29700 Human Main(0): executed: Step 6. Mental: Verify icon is at destination.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination> Documents
+<destination_directory> Documents
+<object> Work
+<object_name> Work
+<target> Documents_icon
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+30950 Human Main(0): executed: Step 7. Release  Mouse_Button.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<destination_directory> Documents
+<object_name> Work
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+31100 Human Main(0): executed: Step 8. Delete <target>; Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+31150 Human Main(0): executed: Step 2. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> T4
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+31200 Human Main(0): executed: Step SR Return. Return_with_goal_accomplished.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> None
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+31250 Human Main(0): executed: Step 4. Store Next of <current_task> under <current_task_name>.
+Contents of WM tag store:
+<current_task> T4
+<current_task_name> None
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+31300 Human Main(0): executed: Step 5. Goto 2.
+Contents of WM tag store:
+<trash> Trash_can_icon
+Visual Memory: 
+  Documents_icon:  Label:Documents Status:In_focus
+  Temp_icon:  Label:Temp Status:Out_of_focus
+  Trash_can_icon:  Label:Trash Status:Out_of_focus
+  Work_icon:  Label:Work Status:Out_of_focus
+  file1_icon:  Label:file1.txt Status:Out_of_focus
+  file2_icon:  Label:file2.txt Status:Out_of_focus
+  In focus: Documents_icon
+Auditory Memory: Empty
+Task Memory: 
+  T1:  Enclosing_directory:Work Filename:file1.txt Name:First Next:T2 Status:Out_of_focus Type:delete_file
+  T2:  Destination_directory:Documents Enclosing_directory:Work Filename:file2.txt Name:T2 Next:T3 Status:Out_of_focus Type:move_file
+  T3:  Directory_name:Temp Name:T3 Next:T4 Status:Out_of_focus Type:delete_directory
+  T4:  Destination_directory:Documents Directory_name:Work Name:T4 Next:None Status:In_focus Type:move_directory
+  In focus: T4
+High_Level Memory: Empty
+31350 Human Main(0): executed: Step 2. Decide: 
+If <current_task_name> is None 
+Then Delete <current_task>; Delete <current_task_name>; Return_with_goal_accomplished.
+31350:Human:Cognitive_processor: No more steps to execute.
+Simulation Done!
+Run time was 31.4 sec (simulated), 0.406165 sec (process), 1 sec (wallclock)
+Run Completed!

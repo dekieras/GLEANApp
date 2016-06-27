@@ -1,0 +1,119 @@
+// Simplified: 
+
+Define_model: "MacOS File Maintenance Example"
+Starting_goal is Perform Disk_Maintenance.
+
+Visual_object: Trash_can_icon
+	Label is Trash.
+	Location is "(10, 20)".
+	Size is "(2, 2)".
+	
+Visual_object: file1_icon
+	Label is "file1.txt".
+
+Visual_object: file2_icon
+	Label is "file2.txt".
+
+Visual_object: Documents_icon
+	Label is "Documents".
+	
+Visual_object: Work_icon
+	Label is "Work".
+	
+Visual_object: Temp_icon
+	Label is "Temp".
+
+
+// first task is to delete the file "Work/file1.txt"
+Task_item: T1 
+	Name is First.
+	Type is delete_file.
+	Filename is "file1.txt".
+	Enclosing_directory is "Work".
+	Next is T2.
+	
+// next task is to move the file "Work/file2.txt" to the directory "Documents"
+Task_item: T2
+	Name is T2.
+	Type is move_file.
+	Filename is "file2.txt".
+	Enclosing_directory is "Work".
+	Destination_directory is "Documents".
+	Next is T3.
+	
+// next task is to delete the "Temp" directory
+Task_item: T3
+	Name is T3.
+	Type is delete_directory.
+	Directory_name is "Temp".
+	Next is T4.
+
+// last task is to move the "Work" directory into the "Documents" directory
+Task_item: T4
+	Name is T4.
+	Type is move_directory.
+	Directory_name is "Work".
+	Destination_directory is "Documents".
+	Next is None.
+	
+Method_for_goal: Perform Disk_Maintenance
+	Step 0. Store Trash_can_icon under <trash>.
+	Step 1. Store First under <current_task_name>.
+	Step 2. Decide: If <current_task_name> is None, 
+		Then Delete <current_task>; Delete <current_task_name>;
+		Return_with_goal_accomplished.
+	Step 3. Get_task_item_whose Name is <current_task_name> 
+		and_store_under <current_task>.
+	Step 3. Accomplish_goal: Perform Disk_Task.
+	Step 4. Store Next of <current_task> under <current_task_name>.
+	Step 5. Goto 2.
+
+
+Selection_rules_for_goal: Perform Disk_Task
+	If Type of <current_task> is delete_file, 
+	  Then Accomplish_goal: delete object using
+		Filename of <current_task>.
+	If Type of <current_task> is move_file, 
+	  Then Accomplish_goal: move object using
+		Filename of <current_task>, and
+		Destination_directory of <current_task>.
+If Type of <current_task> is delete_directory, 
+	  Then Accomplish_goal: delete object using 
+		Directory_name of <current_task>.
+If Type of <current_task> is move_directory, 
+	  Then Accomplish_goal: move object using 
+		Directory_name of <current_task>, and
+		Destination_directory of <current_task>.
+	Return_with_goal_accomplished.
+
+Method_for_goal: delete object using <object_name>
+	Step 1. Accomplish_goal: trash object using <object_name>.
+	Step 2. Return_with_goal_accomplished.
+
+Method_for_goal: trash object using <object>
+	Step 1. Look_for_object_whose Label is <object>
+		and_store_under <target>.
+	Step 2. Point_to <target>.
+	Step 3. Hold_down Mouse_Button.
+	Step 4. Look_at <trash>.
+	Step 5. Point_to <trash>.
+	Step 6. Verify "icon is at destination".
+	Step 7. Release Mouse_Button.
+	Step 8. Delete <target>; Return_with_goal_accomplished.
+
+Method_for_goal: move object using <object_name>, and <destination_directory>
+	Step 1. Accomplish_goal: drag object using 
+		<object_name>, and <destination_directory>.
+	Step 2. Return_with_goal_accomplished.
+	
+Method_for_goal: drag object using <object>, <destination>
+	Step 1. Look_for_object_whose Label is <object>
+		and_store_under <target>.
+	Step 2. Point_to <target>.
+	Step 3. Hold_down Mouse_Button.
+	Step 4. Look_for_object_whose Label is <destination> 
+		and_store_under <target>.
+	Step 5. Point_to <target>.
+	Step 6. Verify "icon is at destination".
+	Step 7. Release Mouse_Button.
+	Step 8. Delete <target>; Return_with_goal_accomplished.
