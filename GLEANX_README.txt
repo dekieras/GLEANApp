@@ -1,44 +1,51 @@
-How to install and use GLEANX.
-INSTALLATION AND TEST
+You need the contents of three repositories: GLEANKernel, GLEANApp, and TLD_model, which is a sample device model. These are three separate projects;the kernel and app are build-once, but a particular model needs to be built and linked against the kernel, and then run with the app.
 
-Get an exported copy of the GLEAN DeviceProjTemplate from the server. Follow the README instructions on how to install it. You won't be able to build a device dylib using the template until the GLEANKernel framework has been built and installed.
+First please open and read the file GLEANkernel/GLEANLib/Glean_Legal_notice.txt.  This contains the terms and conditions under which I supply this code to you, and that you need to conform to.
 
-Download either an exported or version-controlled (Checkout) copy of the GLEANKernel and GLEANApp projects.
+GLEANKernel - this is an Xcode project which contains the platform-idependent C++ class library GLEANLib that implements GLEAN. The Xcode project creates a Mac OS X "Framework" - a dynamic lib with headers that can be linked to by other projects. This framework is copied to a convenient place so that other projects can link to it. The idea is that the only time you have to open and rebuild the GLEANKernel project is if the GLEAN kernel code itself is changed (probably only by me).
 
-Start Xcode and open the GLEANKernel project and hit build (either debug or release). The result should be the GLEANKernal.framework in both the build folder and /Library/Frameworks.
+GLEANLib contains a folder named "Device Support" that has Widgets.h, .cpp in it. The Widgets are a very simple set of class that correspond to typical GUI class library classes, that simplify creating GUI-like device models.
 
-Close the GLEANKernel project. 
+GLEANApp - which is a Mac OS X Carbon API wrapper for GLEANkernel. You run this app, load a device(environment) model and a .gomsl file, and then run the simulation. It links to the GLEANKernel framework. The idea is that you build this once, then launch it whenever you run your model.
 
-Open the GLEANApp project, select the GLEANApp target, and hit build (either debug or release). The result should be the GLEANApp Debug (or Release) in the build folder. Do the same for the Dummy_device target, and at your option, for the CLGLEAN (Command-line interface GLEAN) targets.
+TLD_device.  TLD is for "Top Level Demo" which is a very simple model in which a few colored buttons appear on the simulated display and the user has to click on the red ones. The purpose of the demo is to illustrate how the top level of the user GOMS model might be organized - there are several possibilities documented in the GOMSL code file. The Xcode project builds a dynamic library for the device, which puts up the colored buttons and responds to the simulated user's clicks on them.  This is the simplest demo that I have on hand, and hopefully will allow you to quickly see the basics of how you program a device model.
 
-Close the GLEANApp project.
+Normally, the only coding you will do is to program the device model, and once that is settled, you write the .gomsl code that represents the GOMS model for using the device to accomplish tasks. 
 
-Create a new project in Xcode; the GLEAN device dylib template should appear in the Custom Projects section. Choose it and Call it "TestDevice" or similar. The template includes a Demo_device that implements a simple device suitable for demonstrating different top-level organization for GOMS models. Build the device dylib by hitting build (either Debug or Release).
- 
-Launch GLEANX either by double-clicking on the GLEANX.app icon or running it inside the GLEANApp project.  Load the demo device dylib and compile the Demo_device.gomsl file (included in the GLEAN DeviceProjTemplate directory). It should run successfully.
+I checked the builds of these using Xcode 7.3, Mac OS 10.1.5. The projects must be built at 32-bit applications because the Carbon API is still being used.
 
-Quit and relaunch GLEANX, load the Dummy_device dylib, and a gomsl file such as Mac_file_tasks.gomsl. It should run successfully.
+Here's how to get started.
 
-You should be able to copy GLEANX.app to any location of your choice (e.g. the Applications folder), and likewise you can move the device dylibs to a convenient location, such as in the same directory as the gomsl and other relevant files. You can clean the GLEANKernel and GLEANApp project or delete its build directory. 
+I recommend setting Xcode Preferences so that the build results are more easily accessible by being located in the Project folder instead of the default hidden ~/Library
 
-CREATING YOUR OWN DEVICE
+Launch Xcode, ->Preferences ->Locations, set Derived Data: Relative, should show "Project or Workspace Folder/DerivedData.
 
-Start a new project with the GLEAN device dylib template, and add your own source code files to it, and delete (and trash) the Demo_device ones. 
+Then
 
-Note that any #includes of the GLEANKernel files, like "Symbol.h", will have to be modified to specify the GLEANKernel framework directory:
+Open the GLEANKernel project
+Clean, then build
 
-#include "GLEANKernel/Symbol.h"
+Look at your home directory Library folder.
+This is hidden from ordinary users in current Mac OS. A way to see this in Mac OS X Finder is to hold down option & command while opening the "Go" menu - you should see "Library" as an option.  Otherwise, open a terminal window and cd to ~/Library/Frameworks. Either way you should see an entry for the just built and copied GLEANKernel.framework.
 
-or similar. Note that Xcode automatically searches /Library/Frameworks for GLEANKernel, so a complete path is not needed. If you get a zillion errors on GLEANKernel symbols, Device_base functions, or the like, it is probably because the framework directory is missing from your includes.
+Close the GLEANKernel project.
 
-If you open the GLEANKernel framework icon in Xcode, you can see which GLEANKernel headers are available and have to be referred to in this way.
+Open the GLEANApp project, clean, then build. Should be no problem. 
 
-DEBUGGING YOUR DEVICE
-You can't execute your device dylib by itself, so you can't simply run or debug from your device project. There are two ways to handle this:
+Now open the TLD_device project, clean, then build. Should be no problem. Close the TLD_device project.
 
-1. Open the GLEANApp project and build and run in Debug mode. Open your device project to set breakpoints in the device code. Note that the debug symbol mode is set to DWARF and debug symbols are created in both Debug and Release mode with the supplied project settings for GLEANApp, GLEANKernel and the device project template.
+Launch GLEANApp either from the Xcode window, or by finding and double-clicking GleanApp in the DerivedData/Build/Products/Debug or Release - you should be able to drag the app icon out somewhere convenient, such as the desktop.
 
-2. You can add an execution environment to your device project: In your device project, select Project/New custom executable ... and provide a name like "GLEAN debug" and then navigate to and select the GLEANX.app executable that you want to use. Set any other settings, especially the path, that might be useful. This enables the build & run and build & debug options, which will start GLEANX.app for you. Choose Build and debug, and then load the device dylib created from the same project, where you can set break points.  
+A set of windows should open on the display, see included first screen shot. The initial window layout stinks, but you can move and resize them as you please.
 
+Click in one of the windows to select GLEANX (the old name of the App), select Control/Load Device.  Navigate to the TLD_device DerivedData/Build/Products/Debug or Release
+and select the libTLD_device.dylib and open - this is the dynamic library created by the TLD_device project. You should see a bunch of path information appear in the "Normal output" window. 
 
+Now select GLEANX/Control/Compile and navigate to TLD_device and select and open TopLevelDemo.gomsl. You should see "Model was parsed successfully" and "compiled and executable.  
+
+Now select GLEANX/Control/Go or Run and stuff should start happening. See second screen shot for what it looks like after one Run command.  If you repeat this, eventually the simulation will stop and you'll get some run-time numbers. 
+
+You should be able to play with the different controls, and the .gomsl file.
+
+Hopefully this will get you started. Set a low threshold for asking questions, and I'll try to respond quickly.
 

@@ -25,6 +25,8 @@
 		B7BBB03E0C060B440052E753 /* VisualViewObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0360C060B440052E753 /* VisualViewObject.cpp */; };
 		B7BBB03F0C060B440052E753 /* TextView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7BBB0380C060B440052E753 /* TextView.cpp */; };
 		B7D4D6F91D218C1D00F403EA /* GLEANKernel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D4D6F81D218C1D00F403EA /* GLEANKernel.framework */; };
+		B7D4D7091D21B39B00F403EA /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = B7D4D7071D21B39B00F403EA /* LICENSE.txt */; };
+		B7D4D70A1D21B39B00F403EA /* GLEANX_README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B7D4D7081D21B39B00F403EA /* GLEANX_README.txt */; };
 		B7F4D2AC0C03740800986A1C /* AppDialogBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D29C0C03740800986A1C /* AppDialogBase.cpp */; };
 		B7F4D2AD0C03740800986A1C /* AppDrawingWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D29E0C03740800986A1C /* AppDrawingWindow.cpp */; };
 		B7F4D2AE0C03740800986A1C /* AppNavDialogs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7F4D2A00C03740800986A1C /* AppNavDialogs.cpp */; };
@@ -55,7 +57,6 @@
 		B777CAA20DA13E2000ADF49F /* ObjectView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectView.cpp; sourceTree = "<group>"; };
 		B777CAA30DA13E2000ADF49F /* ObjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectView.h; sourceTree = "<group>"; };
 		B777CBC10DA156DA00ADF49F /* MemoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryView.h; sourceTree = "<group>"; };
-		B78F672C0C0CEFE6002C586A /* Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info copy.plist"; sourceTree = "<group>"; };
 		B78F67300C0CF86F002C586A /* CLGleanApp.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CLGleanApp.cpp; sourceTree = "<group>"; };
 		B78F67310C0CF86F002C586A /* CLGleanApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CLGleanApp.h; sourceTree = "<group>"; };
 		B78F67320C0CF86F002C586A /* CLGleanStandaloneMain.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = CLGleanStandaloneMain.cpp; sourceTree = "<group>"; };
@@ -79,6 +80,8 @@
 		B7BBB0380C060B440052E753 /* TextView.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = TextView.cpp; sourceTree = "<group>"; };
 		B7BBB0390C060B440052E753 /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
 		B7D4D6F81D218C1D00F403EA /* GLEANKernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLEANKernel.framework; path = "/Users/kieras/Documents/Programming/GLEAN work/OSS GLEAN/GLEAN/GLEANApp/../../../../../../Library/Frameworks/GLEANKernel.framework"; sourceTree = "<absolute>"; };
+		B7D4D7071D21B39B00F403EA /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		B7D4D7081D21B39B00F403EA /* GLEANX_README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GLEANX_README.txt; sourceTree = "<group>"; };
 		B7F4D2940C03740800986A1C /* AppBase.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppBase.cpp; sourceTree = "<group>"; };
 		B7F4D2950C03740800986A1C /* AppBase.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppBase.h; sourceTree = "<group>"; };
 		B7F4D2980C03740800986A1C /* AppClassesUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = AppClassesUtilities.cpp; sourceTree = "<group>"; };
@@ -155,6 +158,8 @@
 		20286C29FDCF999611CA2CEA /* GLEANX */ = {
 			isa = PBXGroup;
 			children = (
+				B7D4D7071D21B39B00F403EA /* LICENSE.txt */,
+				B7D4D7081D21B39B00F403EA /* GLEANX_README.txt */,
 				5048396909E3304600765E4B /* Configuration Files */,
 				20286C2AFDCF999611CA2CEA /* Sources */,
 				20286C2CFDCF999611CA2CEA /* Resources */,
@@ -184,7 +189,6 @@
 				B7F4D2F70C03750D00986A1C /* GLEANApp.nib */,
 				8D0C4E960486CD37000505A6 /* Info.plist */,
 				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
-				B78F672C0C0CEFE6002C586A /* Info copy.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -385,9 +389,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D4D7091D21B39B00F403EA /* LICENSE.txt in Resources */,
 				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
 				B7F4D2F90C03750D00986A1C /* AppClasses.nib in Resources */,
 				B7F4D2FA0C03750D00986A1C /* GLEANApp.nib in Resources */,
+				B7D4D70A1D21B39B00F403EA /* GLEANX_README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
