@@ -47,5 +47,3 @@ Now select GLEANX/Control/Go or Run and stuff should start happening. See second
 
 You should be able to play with the different controls, and the .gomsl file.
 
-Hopefully this will get you started. Set a low threshold for asking questions, and I'll try to respond quickly.
-
